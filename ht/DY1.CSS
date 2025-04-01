@@ -1,0 +1,214 @@
+.header {
+    width: 100%;          /* 宽度 */
+    height: 100px;        /* 高度 */
+    position: relative;   /* 相对定位 */
+}
+
+.header img {
+    height: 80px;
+    position: absolute;   /* 绝对定位 */
+    left: 0;              /* 将图片靠左 */
+    transform: translateX(0); /* 移除transform属性，或者设置为0 */
+}
+
+/* 顶部广告 end */
+/* 黑色导航 start */
+.black-nav{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color:#333;
+    font-size: 12px;
+
+}
+.black-nav.warp{
+    width: 1226px;
+    margin: 0 auto;
+}
+.black-nav-left li a{
+    color: #e0dbdb;
+}
+.black-nav-right li a{
+    color: #e0dbdb;
+}
+.black-nav-left{
+    float: left;
+}
+.black-nav-right{
+    float: right;
+}
+.black-nav-left li{
+    float: left;
+    position: relative;
+}
+.black-nav-right li{
+    float: right;
+    position: relative;
+}
+
+.black-nav-left li span{
+    color: #42424200;
+    margin: 0 15px;
+}
+
+.black-nav-right li span{
+    color: #42424200;
+    margin: 0 15px;
+}
+
+.callme{
+    width: 200px;
+    height:0px;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    left: -10%;
+    overflow: hidden;
+
+}
+.callme img{
+    width: 80px;
+    margin: 18px auto 0;
+}
+/* .callme p{ */
+    
+    /* font-size: 16px; */
+    /* line-height: 220px; */
+   
+/* } */
+.black-nav-left li:hover>.callme{
+    height: 200px;
+}
+/* .stri{ */
+    /* width: 0px; */
+    /* height: 0px;
+    border-bottom: 8px#fff;
+    border-left: 8px transparent;
+    border-right: 8px transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: none; */
+/* } */
+
+
+
+
+/* 黑色导航 end */
+/* 白色导航start */
+
+.white-nav .wrap {
+    display: flex; /* 使用flex布局来对齐子元素 */
+    align-items: center; /* 垂直居中对齐子元素 */
+    justify-content: space-between; /* 在主轴上均匀分配子元素，使LOGO和search分别靠左右 */
+  }
+  
+  .white-nav .LOGO {
+    /* 确保LOGO靠左，并且不会伸展 */
+    margin-right: auto; /* 如果只有一个元素靠左，则不需要这个属性 */
+  }
+  
+
+  
+  .white-nav .nav-bar ul {
+    list-style: none; /* 移除列表默认样式 */
+    padding: 0; /* 移除内边距 */
+    margin: 0; /* 移除外边距 */
+    display: flex; /* 使用flex布局来对齐导航链接 */
+  }
+  
+  .white-nav .nav-bar ul li {
+    margin-right: 20px; /* 在导航链接之间添加一些间距 */
+  }
+  
+  .white-nav .search {
+    /* 将搜索框推到最右边 */
+    margin-left: auto; /* 如果只有一个元素靠右，则不需要这个属性 */
+  }
+  .LOGO{
+    width: 55px;
+    height: 55px;
+    margin: top -30px;
+    overflow: hidden;
+  }
+ .nav-bar{
+    width: 800px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: 235px;
+    float: left;
+ }
+ .nav-bar li a{
+   color: #cbc6c6;
+   padding: 0 10px;
+   margin-left: 70px;
+ }
+ .search input{
+    width: 300px;
+    height: 50px;
+    float: left;
+    margin-top: 21px;
+    margin-right: 20px;
+    border-radius: 5px;
+
+
+ }
+ .search button{
+
+    width: 50px;
+    height: 56px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20%;
+    border-radius: 5px;
+
+ }
+
+ .nav-bar{
+    background-color: #333333da;
+    border-radius: 10px;
+ }
+
+ .zhanshi img { width: 600px;
+    height: 400px; /* 设置图像宽度为500像素 /  / 设置图像高度为300像素 */
+    margin-left: 515px;
+    border-radius: 10px;
+ }
+
+    /* 根据需要设置按钮样式 */
+.anlizhanshi a{
+    color: #ffffff;
+    margin-top: 30px;
+    text-align: center;
+
+}
+.anlizhanshi{
+    border-radius: 10px;
+    display: flex;            /* 开启Flexbox布局 */
+    flex-direction: column;   /* 子元素垂直排列 */
+    width: 200px;
+    height:350px;
+    margin-left: 315px;
+    margin-top: 50px;
+    background-color: #333;
+
+}
+.bu{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin-left: 315px;
+    margin-top: -500px;
+    background-color: #333;
+}
+.bu p {
+    color: #ffffff;      /* 文本颜色为白色 */
+    text-align: center;   /* 文本居中 */
+    font-family: '宋体', sans-serif; /* 设置字体为宋体，如果宋体不可用，则使用 sans-serif */
+    font-weight: bold;    /* 文本加粗 */
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+  
+/* 白色导航start */

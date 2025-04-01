@@ -1,0 +1,67 @@
+/* Reset some basic elements */
+/* 重置默认的HTML元素样式 */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0; /* 移除所有元素的默认外边距 */
+    padding: 0; /* 移除所有元素的默认内边距 */
+}
+
+/* 设置body的基本字体和排版样式 */
+body {
+    font-family: 'Arial', sans-serif; /* 设置默认字体为Arial，如果Arial不可用，则使用sans-serif系列字体 */
+    line-height: 1.6; /* 设置行高为1.6，使得文本行间距更加舒适 */
+    color: #333; /* 设置默认文本颜色为深灰色 */
+}
+
+/* 设置标题元素的字体和排版样式 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', 'Arial', sans-serif; /* 设置标题字体为Helvetica，如果Helvetica不可用，则回退到Arial */
+    font-weight: normal; /* 将标题的字体权重设置为正常，而不是默认的加粗 */
+    line-height: 1.1; /* 设置标题的行高为1.1，使得标题更加紧凑 */
+}
+
+/* 为不同级别的标题设置不同的字体大小 */
+h1 { font-size: 2.5em; } /* h1的字体大小是基础字体大小的2.5倍 */
+h2 { font-size: 2em; }   /* h2的字体大小是基础字体大小的2倍 */
+h3 { font-size: 1.75em; } /* h3的字体大小是基础字体大小的1.75倍 */
+h4 { font-size: 1.5em; }  /* h4的字体大小是基础字体大小的1.5倍 */
+h5 { font-size: 1.25em; } /* h5的字体大小是基础字体大小的1.25倍 */
+h6 { font-size: 1em; }    /* h6的字体大小与基础字体大小相同 */
+
+/* 设置链接的基本样式 */
+a {
+    color: #d8dbde; /* 设置链接文本颜色为蓝色 */
+    text-decoration: none; /* 移除链接的下划线 */
+}
+
+/* 设置鼠标悬停时链接的样式 */
+a:hover {
+    color: #0056b3; /* 鼠标悬停时，链接文本颜色变深 */
+    text-decoration: underline; /* 鼠标悬停时，链接添加下划线 */
+}
+
+/* 移除无序列表和有序列表的项目符号 */
+ul, ol {
+    list-style: none; /* 移除列表前的默认项目符号 */
+}
+
+
+
+/* 辅助类，用于浮动元素 */
+.float-left { float: left; } /* 元素左浮动 */
+.float-right { float: right; } /* 元素右浮动 */
+
+/* 清除浮动，用于包含浮动元素的容器 */
+.clearfix::after {
+    content: ""; /* 生成一个伪元素 */
+    display: table; /* 将伪元素设置为表格，确保它在所有浏览器中的表现一致 */
+    clear: both; /* 清除浮动，确保容器能够包含浮动元素 */
+}
+
+/* 响应式设计的基础样式 */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* 当视口宽度小于768px时，容器宽度调整为95% */
+    }
+}
+
+/* 可以在这里添加任何额外的样式 */

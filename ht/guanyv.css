@@ -1,0 +1,8 @@
+.lxtp img{
+    width: 1520px;
+    height: 400px;
+    position: absolute;   /* 绝对定位 */
+    left: 3px;              /* 将图片靠左 */
+    transform: translateX(0); 
+
+}
